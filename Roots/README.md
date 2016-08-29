@@ -10,4 +10,4 @@ The program specifications are in pa4.pdf
 6. Enter two integers for the left endpoint and right endpoint
 
 #Cleaning Up
-To quickly remove Roots and Roots.class, type "make clean"
+To quickly remove Roots and Roots.class, type "make clean" into the console
