@@ -1,7 +1,5 @@
 # Makefile
 # Karen Lee
-# kglee
-# pa4
 # A Makefile for Roots
 Roots: Roots.class
 	echo Main-class: Roots > Manifest
