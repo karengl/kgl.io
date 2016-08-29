@@ -10,5 +10,5 @@ The program specifications are in pa4.pdf
 5. Enter (degree + 1) doubles as the coefficients
 6. Enter two integers for the left endpoint and right endpoint
 
-#Cleaning Up
+#Clean
 To quickly remove Roots and Roots.class, type "make clean" into the console
