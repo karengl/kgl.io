@@ -13,8 +13,3 @@ Roots.class: Roots.java
 clean:
 	rm -f Roots.class Roots
 
-submit: Makefile Roots.java
-	submit cmps012a-pt.f15 pa4 Makefile Roots.java
-
-check:
-	ls /afs/cats.ucsc.edu/class/cmps012a-pt.f15/pa4/kglee
