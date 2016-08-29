@@ -8,5 +8,6 @@ The program specifications are in pa4.pdf
 4. Enter an integer for the degree
 5. Enter (degree + 1) doubles as the coefficients
 6. Enter two integers for the left endpoint and right endpoint
+
 #Cleaning Up
 To quickly remove Roots and Roots.class, type "make clean"
