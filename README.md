@@ -1,2 +1,2 @@
 # kgl.io
-Personal website
+My personal website to display my work.
