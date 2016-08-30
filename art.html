@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>kgl</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link href="site.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav id="nav01"></nav>
+
+        <div id="wrap">
+        <div id="main">
+        <h1>Portfolio</h1>
+
+        <ul id="filters">
+            <li><span class="filter active" data-filter=".3D, .code, .crochet">All
+                </span></li>
+            <li><span class="filter" data-filter=".3D">3D</span></li>
+            <li><span class="filter" data-filter=".code">Code</span></li>
+            <li><span class="filter" data-filter=".crochet">Crochet</span></li>
+        </ul>
+        <br>
+
+        <div id="portfoliolist">
+            <div class="portfolio 3D" data-cat="3D">
+                <h2>3D</h2>
+                <p>
+                <div class="row-padding">
+                    <div class="img-container">
+                        <img src="img/3Dcup.jpg" style="width:100%"
+                          onclick="onClick(this)" class="hover-opacity" alt="3D cup">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/3Dcloth.jpg" style="width:100%" alt="3D cloth"
+                          onclick="onClick(this)" class="hover-opacity">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/small_3Dwater.jpg" style="width:100%"
+                          onclick="onClick(this)" class="hover-opacity">
+                    </div>
+                    <div class="img-container">
+                        <img src="img/small_3Dshroomcave.jpg" style="width:100%"
+                          onclick="onClick(this)" class="hover-opacity">
+                    </div>
+                </div></p>
+            </div>
+
+            <div class="portfolio crochet" data-cat="crochet">
+                <h2>Crochet</h2>
+                <p>
+                <div class="row-padding">
+                    <div class="img-container">
+                        <img src="img/turtle01.jpg" style="width:100%"
+                          onclick="onClick(this)" class="hover-opacity" alt="Turtle">
+                    </div>
+                </div></p>
+            </div>
+
+            <div class="portfolio code" data-cat="code">
+                <h2>Code</h2>
+                <div>
+                    <span class="droptext">Roots</span>
+                    <div class="dropdetail">
+                    <p>A Java program for class that finds the real roots of a
+                       polynomial function within a specified range. The code does
+                       not check input.</p>
+                    <a href="https://github.com/karengl/kgl.io/tree/master/Roots">
+                      View on Github</a>
+                    <p><a href="/pgrm/Roots/Roots.java" download>Roots.java</a> | 
+                    <a href="/pgrm/Roots/Makefile" download>Makefile</a> | 
+                    <a href="/pgrm/Roots/pa4.pdf" download>Program Specifications</a>
+                </p></div>
+            </div>
+        </div>
+
+        <div id="modal01" class="modal">
+            <span class="closebtn" onclick="document.getElementById('modal01').style.display='none'">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+
+        </div></div>
+        <footer>
+            <span>&copy; <script>document.write(new Date().getFullYear())</script></span>
+        </footer></div>
+
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="jquery.mixitup.min.js"></script>
+        
+    </body>
+</html>
