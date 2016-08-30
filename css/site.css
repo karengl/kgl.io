@@ -1,0 +1,317 @@
+body, h1, h2, h3, h4, h5, h6 { font-family: "Segoe UI", Arial, sans-serif; }
+
+body, html {
+    height: 100%;
+    background-color: white;
+    color: #777;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+html {
+    overflow-x: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    height: 100%;
+    display: table;
+    width: 100%;
+}
+
+#main {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding-left: 15px;
+    padding-top: 35px;
+    background-color: #ffffff;
+    overflow: auto;
+    display: table;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+h1 {
+    border-bottom: 3px solid #b2c2bf;
+    color: #3b3a30;
+    font-size: 36px;
+}
+
+h2 { font-size: 30px; }
+
+footer {
+    color: #bababa;
+    font-size: 12px;
+    clear: both;
+    background-color: #696969;
+    height: 50px;
+    display: table-row;
+    text-align: center;
+}
+
+span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+ul#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 0 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+ul#menu li { float: left; }
+
+ul#menu li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul#menu li a:hover {
+    background-color: #696969;
+}
+
+ul#menu li a:focus, .active {
+    background-color: #ccc;
+}
+
+/* index.html assets */
+/* Parallax effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    opacity: 0.8;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (full height) */
+.bgimg-1 {
+    background-image: url("img/3Dshroomcave.jpg");
+    min-height: 100%;
+    opacity: 0.80;
+    filter: alpha(opacity=80);
+}
+
+.bgimg-2 {
+    background-image: url("img/3Dwater.jpg");
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url("img/3Dcloth.jpg");
+    min-height: 400px;
+}
+
+.header, .header02 {
+    letter-spacing: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #f1f1f1!important;
+}
+
+.header02 {
+    padding: 16px 32px;
+    background-color: #000;
+    font-size: 28px!important;
+    -webkit-animation-opacity: opac 1.5s;
+    animation: opac 1.5s;
+}
+
+.content {
+    max-width: 980px;
+    margin: auto;
+    padding: 64px 16px;
+}
+/*********/
+
+.center { text-align: center; }
+
+.row-padding, .row-padding>.img-container {
+    padding: 0 7px 1em 7px;
+}
+
+.row-padding:after, .img-container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.img-container {
+    float: left;
+    width: 32%;
+    padding: 0.1em 8px;
+}
+
+.hover-opacity {
+    -webkit-transition: background-color .3s, color .15s,
+                        box-shadow .3s, opacity 0.3s;
+    transition: background-color .3s, color .15s, box-shadow .3s,
+                opacity 0.3s;
+    cursor: pointer;
+}
+
+.hover-opacity:hover {
+    opacity: 0.60;
+    filter: alpha(opacity=60);
+}
+
+.droptext {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+    display: block;
+    padding: 5px 50px;
+    background-color: #bababa;
+    cursor: pointer;
+}
+
+.dropdetail {
+    display: none;
+    clear: both;
+}
+
+#filters {
+    margin: 1%;
+    padding: 0;
+    list-style: none;
+}
+
+#filters li { float: left; }
+
+#filters li span {
+    display: block;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #666;
+    cursor: pointer;
+}
+
+#filters li span.active {
+    background: #e95a44;
+    color: #fff;
+}
+
+#portfoliolist .portfolio {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    width: 90%;
+    margin: 1%;
+    display: none;
+    float: left;
+    overflow: hidden;
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Header */
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body { padding: 2px 16px; }
+
+/* Modal Content/Box */
+.modal-content {
+    margin: auto; /* 15% from the top and centered */
+    display: block;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 700px;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 100px;
+}
+
+/* Modal Animation */
+.modal-content, #caption {
+    -webkit-animation-name: opac;
+    -webkit-animation-duration: 0.4s;
+    animation-name: opac;
+    animation-duration:0.4s;
+}
+
+@-webkit-keyframes opac {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes opac {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* The Close Button */
+.closebtn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image width on smaller screens */
+@media only screen and (max-width: 1050px) {
+    .modal-content {
+        width: 100%;
+    }
+    .img-container {
+        width: 100%;
+    }
+}
