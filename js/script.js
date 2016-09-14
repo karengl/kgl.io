@@ -1,10 +1,3 @@
-// Main navigation
-document.getElementById("nav01").innerHTML =
-"<ul id='menu'>" +
-"<li><a href='index.html'>Home</a></li>" +
-"<li><a href='art.html'>Portfolio</a></li>" +
-"</ul>";
-
 // Modal slideshow
 $(document).ready(function ($) {
     var i;
@@ -103,7 +96,14 @@ $(function () {
 });
 
 $(function () {
-    $('.droptext').on('click', function () {
-        $(this).parent().find('.dropdetail').slideToggle(300);
+    $('.droptext').each(function () {
+        $(this).on('click', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            } else {
+                $(this).addClass('active');
+            }
+            $(this).siblings('.dropdetail').slideToggle(300);
+        });
     });
 });
