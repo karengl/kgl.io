@@ -13,7 +13,7 @@
     </head>
 
     <body>
-        <nav id="nav01"></nav>
+        <?php $page = 'one'; include('navigation.php'); ?>
 
         <div class="bgimg-1">
             <div class="display-middle" style="white-space:nowrap;">
