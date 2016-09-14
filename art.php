@@ -7,11 +7,11 @@
     </head>
 
     <body>
-        <nav id="nav01"></nav>
+        <?php $page = 'two'; include('navigation.php'); ?>
 
         <div id="wrap">
         <div id="main">
-        <h1>Portfolio</h1>
+        <h1><strong>Portfolio</strong></h1>
 
         <ul id="filters">
             <li><span class="filter active" data-filter=".code, .2D, .3D,
@@ -27,6 +27,12 @@
             <div class="portfolio code" data-cat="code">
                 <h2>Code</h2>
                 <div>
+                    <span class="droptext">Spellcheck</span>
+                    <div class="dropdetail">
+                    <a href="https://gist.github.com/karengl/f94092127feffd8b7a56a35edc20e6e0">View on Github</a>
+                    </div>
+                </div>
+                <div>
                     <span class="droptext">Roots</span>
                     <div class="dropdetail">
                     <p>A Java program for class that finds the real roots of a
@@ -34,10 +40,7 @@
                        not check input.</p>
                     <a href="https://github.com/karengl/kgl.io/tree/master/Roots">
                       View on Github</a>
-                    <p><a href="/pgrm/Roots/Roots.java" download>Roots.java</a> |
-                    <a href="/pgrm/Roots/Makefile" download>Makefile</a> |
-                    <a href="/pgrm/Roots/pa4.pdf" download>Program Specifications</a>
-                    </p></div>
+                    </div>
                 </div>
             </div>
 
